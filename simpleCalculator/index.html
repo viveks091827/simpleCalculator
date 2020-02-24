@@ -4,9 +4,56 @@
     <head>
     	<title> simpleCalculator </title>
     	<meta charset="utf-8"> 
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = yes" />
+        
+    	<link rel="stylesheet" href="style/styleCalculator.css" type="text/css" />
+
     </head>
 
     <body>
-    	
+    	<div id="calculator">
+    		<section id="result">
+	    		<h3 id="expression">65+6</h3>
+	    		<h1 id="finalResult">71</h1>
+    		</section>
+
+    		<section id="button">
+              <div id="firstRow" class="buttonAlign">
+	    		 <button type="button" id="cencelBtn" class="buttonStyle">C</button>
+	             <button type="button" id="powerBtn" class = "buttonStyle">^</button>
+	             <button type="button" id="remainderBtn" class="buttonStyle">%</button>
+	             <button type="button" id="divideBtn" class= "buttonStyle">/</button>
+              </div>
+
+	    	     <div id="secondRow"
+                      class="buttonAlign">
+	    		 <button type="button" id="1Btn" class="buttonStyle">1</button>
+	             <button type="button" id="2Btn" class = "buttonStyle">2</button>
+	             <button type="button" id="3Btn" class="buttonStyle">3</button>
+	             <button type="button" id="multiplyBtn" class= "buttonStyle">*</button>
+              </div>
+                
+                <div id="thirdRow" class="buttonAlign">
+	    		 <button type="button" id="4Btn" class="buttonStyle">4</button>
+	             <button type="button" id="5Btn" class = "buttonStyle">5</button>
+	             <button type="button" id="6Btn" class="buttonStyle">6</button>
+	             <button type="button" id="subtractBtn" class= "buttonStyle">-</button>
+              </div>
+                
+                <div id="fourthRow" class="buttonAlign">
+	    		 <button type="button" id="7Btn" class="buttonStyle">7</button>
+	             <button type="button" id="8Btn" class = "buttonStyle">8</button>
+	             <button type="button" id="9Btn" class="buttonStyle">9</button>
+	             <button type="button" id="addBtn" class= "buttonStyle">+</button>
+              </div>
+                
+                <div id="fifthRow" class="buttonAlign">
+	    		 <button type="button" id="decimalBtn" class="buttonStyle">.</button>
+	             <button type="button" id="0Btn" class = "buttonStyle">0</button>
+	             <button type="button" id="signBtn" class="buttonStyle">+/-</button>
+	             <button type="button" id="assignBtn" class= "buttonStyle">=</button>
+              </div>
+    	    </section>
+        </div>
     </body>
 </html>

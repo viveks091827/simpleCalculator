@@ -1,0 +1,60 @@
+
+
+#calculator {
+	background-color: #181818;
+    height: 520px;
+    width: 280px;
+	margin: 0px auto;
+	padding: 40px 20px;
+    border-radius: 30px;
+    padding: 30px auto;
+    
+}
+
+#result {
+    background-color: #181818;
+    margin: 50px 20px;
+
+}
+
+
+#expression {
+	text-align: right;
+    color: #8c8c8c;
+    font-family: sans-sarif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#finalResult {
+	text-align: right;
+    color: white;
+    font-family:sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    
+}
+
+.buttonStyle{
+    background-color: #313131;
+    color: white;
+    height: 50px;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-width: 0px;
+    text-align: center;
+    margin: 5px;
+}
+
+#button{
+    background-color: #181818;
+}
+
+.buttonAlign{
+    text-align: center;
+}
+
+#assignBtn{
+    background-color: #6d6d6d;
+}
