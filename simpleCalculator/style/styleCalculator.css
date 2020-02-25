@@ -1,55 +1,97 @@
 
-
+body{
+    margin: 5px;
+   
+}
 #calculator {
-	background-color: #181818;
+    margin: 0px auto;
+    padding: 90px 20px 0px 20px;
+    background-color:#181818;
+    border-radius: 30px;
     height: 520px;
     width: 280px;
-	margin: 0px auto;
-	padding: 40px 20px;
-    border-radius: 30px;
-    padding: 30px auto;
-    
 }
 
 #result {
-    background-color: #181818;
-    margin: 50px 20px;
-
+    margin-bottom: 50px;
+    width: 280px;
+    height: 116px;
 }
 
-
 #expression {
-	text-align: right;
+    width: 260px;
+    height: 36px;
+    text-align: right;
     color: #8c8c8c;
     font-family: sans-sarif;
     font-weight: normal;
     font-size: 25px;
+    margin-bottom: 20px;
 }
 
 #finalResult {
-	text-align: right;
+    width: 260px;
+    height: 56px;
+    text-align: right;
     color: white;
     font-family:sans-serif;
     font-weight: normal;
     font-size: 40px;
+}
+
+#button {
+    height: 300px;
+    width: 280px;
     
 }
 
-.buttonStyle{
-    background-color: #313131;
-    color: white;
+#firstRow {
+    margin-bottom: 10px;
+    width: 280px;
     height: 50px;
-    width: 55px;
-    font-size: 20px;
-    border-radius: 15px;
-    border-width: 0px;
-    text-align: center;
-    margin: 5px;
+    
 }
 
-#button{
-    background-color: #181818;
+#secondRow {
+    margin-bottom: 10px;
+    width: 280px;
+    height: 50px;   
+     
 }
+
+#thirdRow {
+    margin-bottom: 10px;
+    width: 280px;
+    height: 50px;
+    
+}
+
+#fourthRow {
+    margin-bottom: 10px;
+    width: 280px;
+    height: 50px;
+    
+}
+
+#fifthRow {
+    
+    width: 280px;
+    height: 50px;
+    
+}
+
+.buttonStyle {
+    font-size: 20px;
+    width: 55px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    background-color:#313131;
+    border-width: 0px;
+    border-radius: 15px;
+
+}
+
 
 .buttonAlign{
     text-align: center;
@@ -57,4 +99,5 @@
 
 #assignBtn{
     background-color: #6d6d6d;
+    width: 123px; 
 }
