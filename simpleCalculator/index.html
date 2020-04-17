@@ -6,54 +6,57 @@
     	<meta charset="utf-8"> 
         <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = yes" />
         
-    	<link rel="stylesheet" href="style/styleCalculator.css" type="text/css" />
+		<link rel="stylesheet" href="style/styleCalculator.css" type="text/css" />
+		<script src="script/cal.js" type="text/javascript" defer></script>
+		<script src="script/app.js" type="text/javascript" defer></script>
 
     </head>
 
     <body>
-    	<div id="calculator">
-    		<div id="result">
-	    		<div id="expression"></div>
-	    		<div id="finalResult"></div>
-			</div>
+    	<div class = "main">
+    		<form name = "form" id = "textSection">
+	    		<input id = "textView">
+			</form>
 
-    		<div id="button">
-              <div id="firstRow" class="buttonAlign">
-	    		 <button type="button" id="deleteBtn" class="buttonStyle">C</button>
-	             <button type="button" id="leftParenthesis" class = "buttonStyle">(</button>
-	             <button type="button" id="rightParenthesis" class="buttonStyle">)</button>
-	             <button type="button" id="divideBtn" class= "buttonStyle">/</button>
-              </div>
+    		<table id="button">
 
-	    	     <div id="secondRow" class="buttonAlign">
-	    		 <button type="button" id="1Btn" class="buttonStyle">1</button>
-	             <button type="button" id="2Btn" class = "buttonStyle">2</button>
-	             <button type="button" id="3Btn" class="buttonStyle">3</button>
-	             <button type="button" id="multiplyBtn" class= "buttonStyle">*</button>
-              </div>
+				<tr id="firstRow" class="buttonAlign">
+					<td><input class = "button" id = "cancel" type = "button" value = "C"></td>
+					<td><input class = "button" id = "leftB" type = "button" value = "("></td>
+					<td><input class = "button" id = "rightB" type = "button" value = ")"></td>
+					<td><input class = "button" id = "modulus" id = "%" type = "button" value = "%"></td>
+				 </tr>
+
+				<tr id="firstRow" class="buttonAlign">
+					<td><input class = "button" id = "7" type = "button" value = "7"></td>
+					<td><input class = "button" id = "8" type = "button" value = "8"></td>
+					<td><input class = "button" id = "9" type = "button" value = "9"></td>
+					<td><input class = "button" id = "divide" type = "button" value = "/"></td>
+				</tr>
+
+				<tr id="firstRow" class="buttonAlign">
+					<td><input class = "button" id = "4" type = "button" value = "4"></td>
+					<td><input class = "button" id = "5" type = "button" value = "5"></td>
+					<td><input class = "button" id = "6" type = "button" value = "6"></td>
+					<td><input class = "button" id = "multi" type = "button" value = "X"></td>
+				</tr>
+
+				<tr id="firstRow" class="buttonAlign">
+					<td><input class = "button" id = "1" type = "button" value = "1"></td>
+					<td><input class = "button" id = "2" type = "button" value = "2"></td>
+					<td><input class = "button" id = "3" type = "button" value = "3"></td>
+					<td><input class = "button" id = "sub" type = "button" value = "-"></td>
+				</tr>
                 
-                <div id="thirdRow" class="buttonAlign">
-	    		 <button type="button" id="4Btn" class="buttonStyle">4</button>
-	             <button type="button" id="5Btn" class = "buttonStyle">5</button>
-	             <button type="button" id="6Btn" class="buttonStyle">6</button>
-	             <button type="button" id="subtractBtn" class= "buttonStyle">-</button>
-              </div>
+				<tr id="firstRow" class="buttonAlign">
+					<td><input class = "button" id = "dot" type = "button" value = "."></td>
+					<td><input class = "button" id = "0" type = "button" value = "0"></td>
+					<td><input class = "button" id = "equal" type = "button" value = "="></td>
+					<td><input class = "button" id = "add" type = "button" value = "+"></td>
+				</tr>
                 
-                <div id="fourthRow" class="buttonAlign">
-	    		 <button type="button" id="7Btn" class="buttonStyle">7</button>
-	             <button type="button" id="8Btn" class = "buttonStyle">8</button>
-	             <button type="button" id="9Btn" class="buttonStyle">9</button>
-	             <button type="button" id="addBtn" class= "buttonStyle">+</button>
-              </div>
-                
-                <div id="fifthRow" class="buttonAlign">
-	    		 <button type="button" id="decimalBtn" class="buttonStyle">.</button>
-	             <button type="button" id="0Btn" class = "buttonStyle">0</button>
-	             <button type="button" id="assignBtn" class="buttonStyle">=</button>
-                </div>
-    	    </div>
+    	    </table>
         </div>
-        <script src="script/cal.js" type="text/javascript"></script>
-        <script src="script/app.js" type="text/javascript"></script>
+        
     </body>
 </html>

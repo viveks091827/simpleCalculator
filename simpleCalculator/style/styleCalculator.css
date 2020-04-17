@@ -1,103 +1,81 @@
-
-body{
-    margin: 5px;
-   
-}
-#calculator {
-    margin: 0px auto;
-    padding: 90px 20px 0px 20px;
-    background-color:#181818;
-    border-radius: 30px;
-    height: 520px;
-    width: 280px;
+* {
+    margin : 0px;
+    padding : 0px;
 }
 
-#result {
-    margin-bottom: 50px;
-    width: 280px;
-    height: 116px;
-}
-
-#expression {
-    width: 260px;
-    height: 36px;
-    text-align: right;
-    color: #8c8c8c;
-    font-family: sans-sarif;
-    font-weight: normal;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-#finalResult {
-    width: 260px;
-    height: 56px;
-    text-align: right;
-    color: white;
-    font-family:sans-serif;
-    font-weight: normal;
-    font-size: 40px;
+.main {
+    background-color : #b3b1b3; 
+    position : relative;
+    height : 500px;
+    width : 330px;
+    margin : 20px auto;
+    padding-top : 20px;
+    border-radius : 10px;
+ 
 }
 
 #button {
-    height: 300px;
-    width: 280px;
-    
+    margin : auto;
 }
 
-#firstRow {
-    margin-bottom: 10px;
-    width: 280px;
-    height: 50px;
-    
+#textSection {
+    padding-left : 28px;
+    margin-bottom : 50px;
 }
 
-#secondRow {
-    margin-bottom: 10px;
-    width: 280px;
-    height: 50px;   
-     
+#modulus {
+    background-color : #4ebab5;
 }
 
-#thirdRow {
-    margin-bottom: 10px;
-    width: 280px;
-    height: 50px;
-    
+#divide {
+    background-color : #f8ad30;
 }
 
-#fourthRow {
-    margin-bottom: 10px;
-    width: 280px;
-    height: 50px;
-    
+#multi {
+    background-color : #f18e8f;
 }
 
-#fifthRow {
-    
-    width: 280px;
-    height: 50px;
-    
+#sub {
+    background-color : #7a8ac7;
 }
 
-.buttonStyle {
-    font-size: 20px;
-    width: 55px;
-    height: 50px;
-    margin: 5px;
-    color: white;
-    background-color:#313131;
-    border-width: 0px;
-    border-radius: 15px;
+#add {
+    background-color : #735f85;
+}
 
+#leftB {
+    background-color : #deddde;
+}
+
+#rightB {
+    background-color : #deddde;
+}
+
+#cancel {
+    background-color : #deddde;
+}
+
+.button {
+    background-color : white;
+    border-style : none;
 }
 
 
-.buttonAlign{
-    text-align: center;
+.button {
+    width : 60px;
+    height : 60px;
+    font-size : 25px;
+    margin : 5px;
+    cursor : pointer;
+    border-radius : 50%;
+  
 }
 
-#assignBtn{
-    background-color: #6d6d6d;
-    width: 123px; 
+#textView {
+    margin : 10px;
+    font-size : 30px;
+    padding : 10px;
+    width : 244px;
+    background-color : #b3b1b3;
+    border-style : none;
 }

@@ -1,33 +1,22 @@
-const cencel = document.getElementById('deleteBtn');
-const leftParenthesis = document.getElementById('leftParenthesisBtn');
-const rightParenthesis = document.getElementById('rightParenthesisBtn');
-const divide = document.getElementById('divideBtn');
-const multiply = document.getElementById('multiplyBtn');
-const minus = document.getElementById('subtractBtn');
-const plus = document.getElementById('addBtn');
-const assignment = document.getElementById('assignBtn');
-const decimal = document.getElementById('decimalBtn');
-const sign = document.getElementById('signBtn');
-const one = document.getElementById('1Btn');
-const two = document.getElementById('2Btn');
-const three = document.getElementById('3Btn');
-const four = document.getElementById('4Btn');
-const five = document.getElementById('5Btn');
-const six = document.getElementById('6Btn');
-const seven = document.getElementById('7Btn');
-const eight = document.getElementById('8Btn');
-const nine = document.getElementById('9Btn');
-const zero = document.getElementById('0Btn');
+const textValue = document.getElementById('textView');
+const oneBtn = document.getElementById('1');
+const twoBtn = document.getElementById('2');
+const threeBtn = document.getElementById('3');
+const fourBtn = document.getElementById('4');
+const fiveBtn = document.getElementById('5');
+const sixBtn = document.getElementById('6');
+const sevenBtn = document.getElementById('7');
+const eightBtn = document.getElementById('8');
+const nineBtn = document.getElementById('9');
+const zeroBtn = document.getElementById('0');
+const decBtn = document.getElementById('dot');
+const plusBtn = document.getElementById('add');
+const minusBtn = document.getElementById('sub');
+const multiBtn = document.getElementById('multi');
+const divideBtn = document.getElementById('divide');
+const modBtn = document.getElementById('modulus');
+const leftParBtn = document.getElementById('leftB');
+const rightParBtn = document.getElementById('rightB');
+const assignBtn = document.getElementById('equal');
+const cancelBtn = document.getElementById('cancel');
 
-
-
-const currentCalculationOutput = document.getElementById('expression');
-const currentResultOutput = document.getElementById('finalResult');
-
-function outputResult(text) {
-  currentCalculationOutput.textContent = text;
-}
-
-function outputFinalResult(result){
-    currentResultOutput.textContent = result;
-}

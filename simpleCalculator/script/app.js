@@ -1,129 +1,159 @@
-const defaultResult = 0;
-var currentResult = defaultResult;
-var currentNumber = 0;
-var recentNumberEntered = '';
-var expression;
-var lastOprator = '';
+let exp = null;
 
-
-
-
-function get1(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '1';
-    expression = expression  + '1';
-    window.console.log(expression);
-    outputResult(expression);
-
+function clean() {
+    textValue.value = '';
+    exp = null;
 }
 
-function get2(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '2';
-    expression = expression  + '2';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get3(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '3';
-    expression = expression  + '3';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get4(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '4';
-    expression = expression  + '4';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get5(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '5';
-    expression = expression  + '5';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get6(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '6';
-    expression = expression  + '6';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get7(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '7';
-    expression = expression  + '7';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get8(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '8';
-    expression = expression  + '8';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get9(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '9';
-    expression = expression  + '9';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function get0(){
-    expression = currentCalculationOutput.innerHTML;
-    recentNumberEntered = recentNumberEntered + '0';
-    expression = expression  + '0';
-    window.console.log(expression);
-    outputResult(expression);
-}
-
-function sum(){
-     expression = currentCalculationOutput.innerHTML;
-     currentNumber = parseInt(recentNumberEntered);
-     currentResult = currentResult + currentNumber;
-     recentNumberEntered = '';
-     expression = expression  + '+';
-     lastOprator = '+';
-     outputResult(expression);
-     outputFinalResult(currentResult);
-}
-
-
-function assign(){
-    if(lastOprator == '+'){
-         sum();
+function insert(num) {
+    if (textValue.value != undefined) {
+        textValue.value += num;
     }
-    else if(lastOprator == '-'){
-        sub();
+
+    else {
+        textValue.value = num;
+    }
+    }
+
+function insertIntoExp(num) {
+    if (exp != undefined) {
+        exp += num;
+    }
+
+    else {
+        exp = num;
+    }
+}
+    
+    function addOne() {
+      insert(1);
+      insertIntoExp('1');
+    }
+    
+    function addTwo() {
+      insert(2);
+      insertIntoExp('2');
+    }
+    
+    function addThree() {
+      insert(3);
+      insertIntoExp('3');
+    }
+    
+    function addFour() {
+      insert(4);
+      insertIntoExp('4');
+    }
+    
+    function addFive() {
+      insert(5);
+      insertIntoExp('5');
+    }
+    
+    function addSix() {
+      insert(6);
+      insertIntoExp('6');
+    }
+    
+    function addSeven() {
+      insert(7);
+      insertIntoExp('7');
+    }
+    
+    function addEight() {
+      insert(8);
+      insertIntoExp('8');
+    }
+    
+    function addNine() {
+      insert(9);
+      insertIntoExp('9');
+    }
+    
+    function addZero() {
+      insert(0);
+      insertIntoExp('0');
+    }
+    
+    function decimal() {
+      insert(".");
+      insertIntoExp('.');
+    }
+    
+    function addition() {
+      insert("+");
+      insertIntoExp('+');
+    }
+    
+    function subtraction() {
+      insert("-");
+      insertIntoExp('-');
+    }
+    
+    function multiplication() {
+      insert('x');
+      insertIntoExp('*');
+    }
+    
+    function division() {
+      insert("/");
+      insertIntoExp('/');
+    }
+    
+    function modulus() {
+      insert("%");
+      insertIntoExp('%');
+    }
+    
+    function leftPar() {
+      insert("(");
+      insertIntoExp('(');
+    }
+    
+    function rightPar() {
+      insert(")");
+      insertIntoExp(')');
+    }
+    
+    function assign() {
+
+        console.log(exp);
+        console.log(textValue.value);
+
+        exp = eval(exp);
+        textValue.value = exp;
+        
+        console.log(exp);
+        console.log(textValue.value);
+        
+    }
+    
+    function cancel() {
+        clean();
     }
     
     
-}
-
-
-plus.addEventListener('click', sum);
-assignment.addEventListener('click', assign);
-
-
-one.addEventListener('click', get1);
-two.addEventListener('click', get2);
-three.addEventListener('click', get3);
-four.addEventListener('click', get4);
-five.addEventListener('click', get5);
-six.addEventListener('click', get6);
-seven.addEventListener('click', get7);
-eight.addEventListener('click', get8);
-nine.addEventListener('click', get9);
-zero.addEventListener('click', get0);
+    oneBtn.addEventListener('click' , addOne);
+    twoBtn.addEventListener('click' , addTwo);
+    threeBtn.addEventListener('click' , addThree);
+    fourBtn.addEventListener('click' , addFour);
+    fiveBtn.addEventListener('click' , addFive);
+    sixBtn.addEventListener('click' , addSix);
+    sevenBtn.addEventListener('click' , addSeven);
+    eightBtn.addEventListener('click' , addEight);
+    nineBtn.addEventListener('click' , addNine);
+    zeroBtn.addEventListener('click' , addZero);
+    plusBtn.addEventListener('click' , addition);
+    minusBtn.addEventListener('click' , subtraction);
+    multiBtn.addEventListener('click' , multiplication);
+    divideBtn.addEventListener('click' , division);
+    modBtn.addEventListener('click' , modulus);
+    leftParBtn.addEventListener('click' , leftPar);
+    rightParBtn.addEventListener('click' , rightPar);
+    cancelBtn.addEventListener('click' , cancel);
+    assignBtn.addEventListener('click' , assign);
+    decBtn.addEventListener('click' , decimal);
+    
+    
+    
+    
